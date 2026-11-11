@@ -1,0 +1,7 @@
+{
+  "nome": "Cliente Exemplo",
+  "cpf": "123.456.789-09",
+  "celular": "(42)99999-0000",
+  "email": "cliente@exemplo.com",
+  "senha": "senha123"
+}

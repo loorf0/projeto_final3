@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monte seu PC na NexTech Informática: escolha os componentes, veja o valor em tempo real e adicione tudo ao carrinho.">
+    <title>Monte seu PC | NexTech Informática</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="monte">
+    <div id="site-header"></div>
+
+    <main class="container-nextech">
+        <nav class="breadcrumb-nextech mt-3" aria-label="breadcrumb">
+            <a href="index.html">Início</a><span>/</span><span>Monte seu PC</span>
+        </nav>
+
+        <section class="builder-hero">
+            <div>
+                <h1>Monte seu PC do zero</h1>
+                <p>Escolha um perfil pronto ou selecione componente por componente. Nossa equipe confere a compatibilidade, monta, testa e entrega pronto para usar.</p>
+            </div>
+            <a href="produtos.html?categoria=PCs%20Prontos" class="btn-ghost-light">
+                <i class="bi bi-pc-display"></i> Ver PCs prontos
+            </a>
+        </section>
+
+        <section>
+            <div class="secao-cabecalho mb-2">
+                <div>
+                    <h2 style="font-size:22px">Comece com um perfil</h2>
+                    <p>Um ponto de partida com peças já compatíveis entre si.</p>
+                </div>
+            </div>
+            <div class="presets-builder" id="presets-builder"></div>
+        </section>
+
+        <div class="builder-layout mt-2">
+            <section class="builder-etapas">
+                <h2>Componentes</h2>
+                <p>Todos os itens podem ser trocados depois. O valor é atualizado automaticamente.</p>
+                <div id="etapas-componentes"></div>
+
+                <div class="servicos-builder" id="servicos-builder"></div>
+
+                <div class="alert mt-3 mb-0" style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;font-size:12px;color:#0e4c8a">
+                    <i class="bi bi-info-circle-fill me-1"></i>
+                    A compatibilidade entre as peças é revisada pela nossa equipe antes da montagem.
+                    Se algo precisar ser ajustado, entraremos em contato.
+                </div>
+            </section>
+
+            <aside class="resumo-compra">
+                <h2>Resumo da montagem</h2>
+                <div class="resumo-lista" id="resumo-lista">
+                    <div class="resumo-vazio">Nenhum componente selecionado ainda.</div>
+                </div>
+                <div class="resumo-totais">
+                    <div class="resumo-linha"><span>Itens selecionados</span><span id="resumo-quantidade">0</span></div>
+                    <div class="resumo-linha" style="font-size:11px">
+                        <span>ou <span id="resumo-parcelas">—</span> sem juros</span>
+                    </div>
+                    <div class="resumo-linha total"><span>Total</span><strong id="resumo-total">R$ 0,00</strong></div>
+                </div>
+                <button type="button" class="btn-nextech" id="btn-adicionar-tudo">
+                    <i class="bi bi-bag-plus"></i> Adicionar tudo ao carrinho
+                </button>
+                <a href="produtos.html" class="btn-outline-nextech">
+                    <i class="bi bi-grid"></i> Ver peças no catálogo
+                </a>
+                <button type="button" class="btn btn-link texto-muted w-100 mt-1" id="btn-limpar-montagem" style="font-size:12px">
+                    Limpar seleção
+                </button>
+            </aside>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/presets.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/monte-seu-pc.js"></script>
+</body>
+</html>

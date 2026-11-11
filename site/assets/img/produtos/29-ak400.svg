@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Air Cooler DeepCool AK400">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1a1206"/>
+            <stop offset="1" stop-color="#7c2d12"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+            <stop offset="0" stop-color="#fb923c" stop-opacity=".28"/>
+            <stop offset="1" stop-color="#fb923c" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#bg)"/>
+    <rect width="800" height="600" fill="url(#grid)"/>
+    <circle cx="400" cy="300" r="270" fill="url(#glow)"/>
+    <circle cx="680" cy="90" r="120" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+    <circle cx="120" cy="520" r="160" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+    <g transform="rotate(-3 400 300)">
+        
+                <g transform="translate(400 300)">
+                    <circle cx="0" cy="0" r="125" fill="rgba(255,255,255,0.04)" stroke="#fb923c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="0" cy="0" r="26" fill="#fb923c" opacity=".8"/>
+                    <path d="M28 0 Q81.56770083329849 38.03564355666295 74.24621202458749 74.24621202458748" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round" opacity=".85"/><path d="M14.000000000000004 24.24871130596428 Q7.844016847289232 89.6575228282571 -27.17599973576469 101.42221176035217" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round" opacity=".85"/><path d="M-13.999999999999993 24.248711305964285 Q-73.72368398600925 51.621879271594175 -101.42221176035216 27.175999735764705" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round" opacity=".85"/><path d="M-28 3.429011037612589e-15 Q-81.5677008332985 -38.03564355666293 -74.2462120245875 -74.24621202458748" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round" opacity=".85"/><path d="M-14.000000000000012 -24.248711305964278 Q-7.844016847289242 -89.6575228282571 27.17599973576472 -101.42221176035216" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round" opacity=".85"/><path d="M14.000000000000004 -24.24871130596428 Q73.72368398600925 -51.62187927159418 101.42221176035217 -27.175999735764673" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round" opacity=".85"/>
+                    <circle cx="0" cy="0" r="8" fill="#fff"/>
+                </g>
+    </g>
+    <text x="40" y="560" fill="rgba(255,255,255,0.45)" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">NEXTECH</text>
+    <text x="760" y="560" fill="#fb923c" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end" opacity=".8">COOLERS</text>
+</svg>

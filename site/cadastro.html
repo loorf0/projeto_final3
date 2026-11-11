@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crie sua conta na NexTech Informática.">
+    <title>Criar conta | NexTech Informática</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="cadastro">
+    <div id="site-header"></div>
+
+    <main class="auth-wrap">
+        <div class="auth-card largo">
+            <div class="auth-logo">
+                <img src="assets/img/logo.svg" alt="NexTech Informática">
+            </div>
+            <h1>Criar sua conta</h1>
+            <p class="auth-sub">Leva menos de um minuto e você já pode finalizar suas compras.</p>
+
+            <div class="auth-erro" id="auth-erro" role="alert"></div>
+
+            <form id="form-cadastro" novalidate>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label class="form-label" for="nome">Nome completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" autocomplete="name"
+                               placeholder="Como devemos chamar você?" maxlength="100" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="cpf">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" inputmode="numeric"
+                               placeholder="000.000.000-00" maxlength="14" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="celular">Celular</label>
+                        <input type="tel" class="form-control" id="celular" name="celular" inputmode="numeric"
+                               placeholder="(00) 00000-0000" maxlength="15" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                               placeholder="voce@email.com" maxlength="100" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="senha">Senha</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="senha" name="senha"
+                                   autocomplete="new-password" placeholder="Mínimo 6 caracteres" required>
+                            <button class="btn" type="button" id="btn-ver-senha" aria-label="Mostrar senha">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                        <div class="senha-forca" id="senha-forca" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="confirmar-senha">Confirmar senha</label>
+                        <input type="password" class="form-control" id="confirmar-senha" name="confirmar-senha"
+                               autocomplete="new-password" placeholder="Repita a senha" required>
+                    </div>
+                </div>
+
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="termos">
+                    <label class="form-check-label" for="termos" style="font-size:12px;color:var(--texto-soft)">
+                        Concordo com os termos de uso e com a política de privacidade da NexTech Informática.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-nextech" id="btn-cadastrar">
+                    <i class="bi bi-person-plus"></i> Criar conta
+                </button>
+            </form>
+
+            <p class="auth-link">Já possui uma conta? <a href="login.html">Entrar</a></p>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

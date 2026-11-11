@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo da NexTech Informática: processadores, placas de vídeo, memórias, celulares, PCs e periféricos.">
+    <title>Produtos | NexTech Informática</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="produtos">
+    <div id="site-header"></div>
+
+    <main>
+        <div class="container-nextech">
+            <section class="catalogo-hero">
+                <div>
+                    <nav class="breadcrumb-nextech" aria-label="breadcrumb">
+                        <a href="index.html">Início</a><span>/</span><span>Produtos</span>
+                    </nav>
+                    <h1 id="titulo-catalogo">Todos os produtos</h1>
+                    <p id="subtitulo-catalogo">Encontre o componente, celular ou PC ideal para você.</p>
+                </div>
+                <a href="monte-seu-pc.html" class="btn-nextech d-none d-md-inline-flex"><i class="bi bi-tools"></i> Monte seu PC</a>
+            </section>
+
+            <div class="catalogo-layout">
+                <aside class="filtros-card" id="filtros-painel" aria-label="Filtros de produtos">
+                    <div class="filtros-topo">
+                        <h2><i class="bi bi-sliders me-1"></i> Filtros</h2>
+                        <div class="d-flex align-items-center gap-2">
+                            <button type="button" class="btn-limpar-filtros" id="btn-limpar-filtros">Limpar</button>
+                            <button type="button" class="btn btn-sm btn-light d-lg-none" id="btn-fechar-filtros" aria-label="Fechar filtros"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="filtro-grupo">
+                        <div class="filtro-titulo">Buscar</div>
+                        <form id="form-busca-catalogo">
+                            <div class="input-group input-group-sm">
+                                <input type="search" id="busca-catalogo" class="form-control" placeholder="Nome do produto" aria-label="Buscar por nome">
+                                <button class="btn btn-outline-secondary" type="submit" aria-label="Buscar"><i class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="filtro-grupo">
+                        <div class="filtro-titulo">Categorias</div>
+                        <div class="lista-categorias" id="lista-categorias"></div>
+                    </div>
+
+                    <div class="filtro-grupo">
+                        <div class="filtro-titulo">Faixa de preço</div>
+                        <div class="price-slider" id="price-slider">
+                            <div class="price-track"><div class="price-fill" id="price-fill"></div></div>
+                            <input type="range" id="range-min" aria-label="Preço mínimo">
+                            <input type="range" id="range-max" aria-label="Preço máximo">
+                        </div>
+                        <div class="preco-inputs">
+                            <div>
+                                <label for="preco-min">Mínimo</label>
+                                <input type="number" id="preco-min" min="0" step="10">
+                            </div>
+                            <div>
+                                <label for="preco-max">Máximo</label>
+                                <input type="number" id="preco-max" min="0" step="10">
+                            </div>
+                        </div>
+                        <p class="mt-2 mb-0" style="font-size:10.5px;color:#94a3b8">Os filtros são aplicados automaticamente.</p>
+                    </div>
+                </aside>
+                <div class="filtros-backdrop" id="filtros-backdrop"></div>
+
+                <section>
+                    <div class="catalogo-toolbar">
+                        <div class="resultado-info" id="resultado-info">Carregando produtos...</div>
+                        <div class="toolbar-acoes">
+                            <button type="button" class="btn-filtros-mobile" id="btn-abrir-filtros">
+                                <i class="bi bi-sliders"></i> Filtros
+                            </button>
+                            <label class="visually-hidden" for="ordenar">Ordenar por</label>
+                            <select class="select-ordenar" id="ordenar">
+                                <option value="relevancia">Padrão</option>
+                                <option value="menor_preco">Menor preço</option>
+                                <option value="maior_preco">Maior preço</option>
+                                <option value="nome_az">Nome A–Z</option>
+                                <option value="nome_za">Nome Z–A</option>
+                                <option value="avaliacao">Melhor avaliados</option>
+                                <option value="destaques">Destaques</option>
+                                <option value="novidades">Novidades</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="chips-filtros" id="chips-filtros"></div>
+                    <div class="grid-catalogo" id="grid-catalogo"></div>
+                    <div class="pagination-nextech" id="paginacao"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+</html>

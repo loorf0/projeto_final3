@@ -1,0 +1,15 @@
+# Copie este arquivo para ".env" e preencha com os dados do seu MySQL.
+# O arquivo .env não deve ser enviado para o repositório.
+
+API_PORT=3000
+
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=sua_senha_do_mysql
+DB_DATABASE=nextech
+
+# Use uma chave longa e aleatória. Exemplo de geração:
+# node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+JWT_SECRET=coloque_uma_chave_longa_e_aleatoria
+JWT_EXPIRES_IN=7d

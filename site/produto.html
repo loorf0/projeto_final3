@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do produto na NexTech Informática.">
+    <title>Produto | NexTech Informática</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="produtos">
+    <div id="site-header"></div>
+
+    <main class="container-nextech">
+        <div class="detalhe-wrap">
+            <nav class="breadcrumb-nextech" aria-label="breadcrumb">
+                <a href="index.html">Início</a><span>/</span>
+                <a href="produtos.html">Produtos</a><span>/</span>
+                <span id="breadcrumb-produto">Detalhes</span>
+            </nav>
+
+            <div id="detalhe-conteudo">
+                <div class="detalhe-grid">
+                    <div class="skeleton" style="aspect-ratio:4/3;border-radius:22px"></div>
+                    <div>
+                        <div class="skeleton mb-3" style="height:14px;width:35%"></div>
+                        <div class="skeleton mb-2" style="height:34px;width:92%"></div>
+                        <div class="skeleton mb-4" style="height:34px;width:64%"></div>
+                        <div class="skeleton mb-2" style="height:18px;width:50%"></div>
+                        <div class="skeleton" style="height:140px"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="secao" id="secao-relacionados" style="display:none">
+                <div class="secao-cabecalho">
+                    <div>
+                        <h2>Você também pode gostar</h2>
+                        <p>Produtos da mesma categoria selecionados para você.</p>
+                    </div>
+                    <a href="#" id="link-relacionados" class="link-ver-tudo">Ver categoria <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="grid-produtos" id="relacionados-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="54" viewBox="0 0 250 54" role="img" aria-label="NexTech Informática">
+    <defs>
+        <linearGradient id="marca" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0b3b6f"/>
+            <stop offset=".55" stop-color="#0e4c8a"/>
+            <stop offset="1" stop-color="#22d3ee"/>
+        </linearGradient>
+    </defs>
+    <rect x="1" y="4" width="46" height="46" rx="13" fill="url(#marca)"/>
+    <path d="M14 36V18l8 9 8-9v18" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="39" cy="14" r="4" fill="#22d3ee"/>
+    <text x="58" y="29" fill="#0f172a" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" letter-spacing="-0.8">NEXTECH</text>
+    <text x="59" y="43" fill="#64748b" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="8.2" font-weight="700" letter-spacing="3.2">INFORMÁTICA</text>
+</svg>

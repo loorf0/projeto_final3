@@ -1,0 +1,30 @@
+{
+  "name": "nextech-informatica",
+  "version": "1.0.0",
+  "description": "Loja de informática NexTech - API Node.js/Express com MySQL e front-end completo",
+  "license": "ISC",
+  "author": "NexTech Informática",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "migrate": "node migration.js",
+    "migrate:reset": "node migration.js --reset",
+    "db:create": "node scripts/criar-banco.js",
+    "db:test": "node scripts/testar-banco.js",
+    "test": "node --test tests/validacao.test.js tests/site.test.js tests/api.test.js",
+    "imagens": "node scripts/gerar-imagens.js",
+    "sql": "node scripts/gerar-sql.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.23.3"
+  }
+}
